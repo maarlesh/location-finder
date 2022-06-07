@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import HemisphereComponent from "./HemisphereComponent";
 class App extends React.Component{
     constructor(props){
         super(props);
@@ -21,11 +22,8 @@ class App extends React.Component{
     }
     render(){
         return(
-            <div> <h1> Your ISP location</h1>
-                Lattitude:{this.state.lattitude}
-                <br />
-                Longitude:{this.state.longitude}
-
+            <div> 
+                <HemisphereComponent lattitude = {this.state.lattitude} longitude={this.state.longitude} />
                 {this.state.errorMessage}
             </div>
         )
