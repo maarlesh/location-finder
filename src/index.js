@@ -21,6 +21,7 @@ class App extends React.Component{
         )
     }
     render(){
+        document.body.style.background = '#ebebeb';
         return(
             <div> 
                 <HemisphereComponent lattitude = {this.state.lattitude} longitude={this.state.longitude} />
